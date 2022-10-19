@@ -11,33 +11,33 @@
 			<td id="screen" colspan="4"></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-operator="ac" class="operator" >AC</a></td>
-			<td><a href="#" data-operator="c" class="operator" >C</a></td>
-			<td><a href="#" data-operator="%" class="operator" >%</a></td>
-			<td><a href="#" data-operator="/" class="operator" >/</a></td>
+			<td><a href="#" data-operator="ac" class="operator" onclick="allClear(event)" >AC</a></td>
+			<td><a href="#" data-operator="c" class="operator" onclick="clearCurrent(event)">C</a></td>
+			<td><a href="#" data-operator="%" class="operator" onclick="handleOperator(event)">%</a></td>
+			<td><a href="#" data-operator="/" class="operator" onclick="handleOperator(event)">/</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="7" class="number">7</a></td>
-			<td><a href="#" data-number="8" class="number">8</a></td>
-			<td><a href="#" data-number="9" class="number">9</a></td>
-			<td><a href="#" data-operator="*" class="operator" >*</a></td>
+			<td><a href="#" data-number="7" class="number" onclick="handleNumber(event)">7</a></td>
+			<td><a href="#" data-number="8" class="number" onclick="handleNumber(event)">8</a></td>
+			<td><a href="#" data-number="9" class="number" onclick="handleNumber(event)">9</a></td>
+			<td><a href="#" data-operator="*" class="operator" onclick="handleOperator(event)" >*</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="4" class="number">4</a></td>
-			<td><a href="#" data-number="5" class="number">5</a></td>
-			<td><a href="#" data-number="6" class="number">6</a></td>
-			<td><a href="#" data-operator="-" class="operator" >-</a></td>
+			<td><a href="#" data-number="4" class="number" onclick="handleNumber(event)">4</a></td>
+			<td><a href="#" data-number="5" class="number" onclick="handleNumber(event)">5</a></td>
+			<td><a href="#" data-number="6" class="number" onclick="handleNumber(event)">6</a></td>
+			<td><a href="#" data-operator="-" class="operator" onclick="handleOperator(event)">-</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="1" class="number">1</a></td>
-			<td><a href="#" data-number="2" class="number">2</a></td>
-			<td><a href="#" data-number="3" class="number">3</a></td>
-			<td><a href="#" data-operator="+" class="operator" >+</a></td>
+			<td><a href="#" data-number="1" class="number" onclick="handleNumber(event)">1</a></td>
+			<td><a href="#" data-number="2" class="number" onclick="handleNumber(event)">2</a></td>
+			<td><a href="#" data-number="3" class="number" onclick="handleNumber(event)">3</a></td>
+			<td><a href="#" data-operator="+" class="operator" onclick="handleOperator(event)">+</a></td>
 		</tr>
 		<tr>
-			<td colspan="2"><a href="#" data-number="0" class="number">0</a></td>
-			<td><a href="#" data-operator="." id="float" class="operator">.</a></td>
-			<td><a href="#" data-operator="=" class="operator" >=</a></td>
+			<td colspan="2"><a href="#" data-number="0" class="number" onclick="handleNumber(event)">0</a></td>
+			<td><a href="#" data-operator="." id="float" class="operator" onclick="handleFloat(event)">.</a></td>
+			<td><a href="#" data-operator="=" class="operator" onclick="handleEqual(event)">=</a></td>
 		</tr>
 	</table>
 	<script src="./assets/js/index.js"></script>

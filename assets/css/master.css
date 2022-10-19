@@ -1,16 +1,19 @@
 #screen {
+	padding: 1em;
 	height: 2em;
+	text-align: left;
 }
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
 td{
-	padding: 1em 1.3em;
 	text-align: center;
 	border: 1px solid black;
 }
 td a{
+	padding: 1em 1.3em;
 	display: inline-block;
 	text-decoration: none;
+	cursor: pointer;
 }
