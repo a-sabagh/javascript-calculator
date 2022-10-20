@@ -60,3 +60,8 @@ function clearCurrent(event){
 	updateScreen(window.number)
 }
 
+function handleFloat(event){
+	event.preventDefault()
+	window.number = `${window.number}.`
+	updateScreen(window.number)
+}
