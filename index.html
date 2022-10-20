@@ -11,35 +11,37 @@
 			<td id="screen" colspan="4"></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-operator="ac" class="operator" onclick="allClear(event)" >AC</a></td>
-			<td><a href="#" data-operator="c" class="operator" onclick="clearCurrent(event)">C</a></td>
-			<td><a href="#" data-operator="%" class="operator" onclick="handleOperator(event)">%</a></td>
-			<td><a href="#" data-operator="/" class="operator" onclick="handleOperator(event)">/</a></td>
+			<td><a href="#" data-operator="ac" class="operator" onclick="calculatorObject.allClear(event)" >AC</a></td>
+			<td><a href="#" data-operator="c" class="operator" onclick="calculatorObject.clearCurrent(event)">C</a></td>
+			<td><a href="#" data-operator="%" class="operator" onclick="calculatorObject.handleOperator(event)">%</a></td>
+			<td><a href="#" data-operator="/" class="operator" onclick="calculatorObject.handleOperator(event)">/</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="7" class="number" onclick="handleNumber(event)">7</a></td>
-			<td><a href="#" data-number="8" class="number" onclick="handleNumber(event)">8</a></td>
-			<td><a href="#" data-number="9" class="number" onclick="handleNumber(event)">9</a></td>
-			<td><a href="#" data-operator="*" class="operator" onclick="handleOperator(event)" >*</a></td>
+			<td><a href="#" data-number="7" class="number" onclick="calculatorObject.handleNumber(event)">7</a></td>
+			<td><a href="#" data-number="8" class="number" onclick="calculatorObject.handleNumber(event)">8</a></td>
+			<td><a href="#" data-number="9" class="number" onclick="calculatorObject.handleNumber(event)">9</a></td>
+			<td><a href="#" data-operator="*" class="operator" onclick="calculatorObject.handleOperator(event)" >*</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="4" class="number" onclick="handleNumber(event)">4</a></td>
-			<td><a href="#" data-number="5" class="number" onclick="handleNumber(event)">5</a></td>
-			<td><a href="#" data-number="6" class="number" onclick="handleNumber(event)">6</a></td>
-			<td><a href="#" data-operator="-" class="operator" onclick="handleOperator(event)">-</a></td>
+			<td><a href="#" data-number="4" class="number" onclick="calculatorObject.handleNumber(event)">4</a></td>
+			<td><a href="#" data-number="5" class="number" onclick="calculatorObject.handleNumber(event)">5</a></td>
+			<td><a href="#" data-number="6" class="number" onclick="calculatorObject.handleNumber(event)">6</a></td>
+			<td><a href="#" data-operator="-" class="operator" onclick="calculatorObject.handleOperator(event)">-</a></td>
 		</tr>
 		<tr>
-			<td><a href="#" data-number="1" class="number" onclick="handleNumber(event)">1</a></td>
-			<td><a href="#" data-number="2" class="number" onclick="handleNumber(event)">2</a></td>
-			<td><a href="#" data-number="3" class="number" onclick="handleNumber(event)">3</a></td>
-			<td><a href="#" data-operator="+" class="operator" onclick="handleOperator(event)">+</a></td>
+			<td><a href="#" data-number="1" class="number" onclick="calculatorObject.handleNumber(event)">1</a></td>
+			<td><a href="#" data-number="2" class="number" onclick="calculatorObject.handleNumber(event)">2</a></td>
+			<td><a href="#" data-number="3" class="number" onclick="calculatorObject.handleNumber(event)">3</a></td>
+			<td><a href="#" data-operator="+" class="operator" onclick="calculatorObject.handleOperator(event)">+</a></td>
 		</tr>
 		<tr>
-			<td colspan="2"><a href="#" data-number="0" class="number" onclick="handleNumber(event)">0</a></td>
-			<td><a href="#" data-operator="." id="float" class="operator" onclick="handleFloat(event)">.</a></td>
-			<td><a href="#" data-operator="=" class="operator" onclick="handleEqual(event)">=</a></td>
+			<td colspan="2"><a href="#" data-number="0" class="number" onclick="calculatorObject.handleNumber(event)">0</a></td>
+			<td><a href="#" data-operator="." id="float" class="operator" onclick="calculatorObject.handleFloat(event)">.</a></td>
+			<td><a href="#" data-operator="=" class="operator" onclick="calculatorObject.handleEqual(event)">=</a></td>
 		</tr>
 	</table>
-	<script src="./assets/js/index.js"></script>
+	<script type="module" src="./assets/js/CalculatorView.js"></script>
+	<script type="module" src="./assets/js/CalculatorLogic.js"></script>
+	<script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
