@@ -18,7 +18,7 @@ function parseString(str){
 function handleNumber(event){
 	event.preventDefault()
 	let currentNumber = parseInt(event.target.getAttribute('data-number'))
-	window.number = window.number * 10 + currentNumber
+	window.number = Number(`${window.number}${currentNumber}`)
 	updateScreen(window.number)
 	if(window.number.toString().length == 1 && window.operator.length > 0){
 		window.list = `${window.list}${window.operator}`
