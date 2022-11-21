@@ -1,10 +1,14 @@
+@import '~@fontsource/orbitron/400.css';
+
 h1{
 	text-align: center;
+	font-family: Orbitron;
 }
 #screen {
 	padding: 1em;
 	height: 2em;
 	text-align: left;
+	font-family: Orbitron;
 }
 table {
 	border: 1px solid black;

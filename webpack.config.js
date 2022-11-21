@@ -23,16 +23,21 @@ const config = {
 				test: /\.(woff|eot|ttf|svg)$/i,
 				use: [
 					{
-						loader: 'file-loader'
+						loader: 'url-loader'
 					}
 				]
-			}
+			},
+			{
+				test: /\.(png|jpg)$/i,
+				use: 'file-loader',
+			},
 		]
 	},
 	plugins: [
 		new MiniCssExtractPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'Javascript Calculator',
+			favicon: './src/images/favicon.png',
 			template: './src/index.html',
 			chunks: 'index',
 		})
