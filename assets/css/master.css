@@ -1,3 +1,6 @@
+h1{
+	text-align: center;
+}
 #screen {
 	padding: 1em;
 	height: 2em;
@@ -6,6 +9,7 @@
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
+	margin: 2em auto;
 }
 td{
 	text-align: center;
