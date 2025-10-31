@@ -8,7 +8,7 @@ RUN npm i
 
 RUN npm run build
 
-FROM nginx:latest
+FROM nginx:latest AS app
 
 COPY --from=build /app/dist/ /usr/share/nginx/html
 
