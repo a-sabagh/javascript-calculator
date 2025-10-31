@@ -1,0 +1,13 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    restart: unless-stopped
+    networks:
+      - js_calculator_net
+    container_name: js_cal_nginx
+
+networks:
+  js_calculator_net:

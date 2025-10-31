@@ -6,11 +6,13 @@ A simple web-based calculator built with JavaScript, HTML, and CSS.
 
 ## 🐳 Run with Docker
 
-Run application using docker compose
+1. Run application using docker compose
 
 ```bash
 docker compose up -d
 ```
+
+2. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## 📦 Build Image and Run Container
 
